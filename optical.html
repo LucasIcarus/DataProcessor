@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./d3/vendor/js/d3.min.js"></script>
+
+    <style>
+    body {
+        font: 18px sans-serif;
+    }
+    .axis text {
+        font-size: 30px
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+        stroke-width: 2px;
+        z-index: 100;
+    }
+
+    .axis-minor path {
+        stroke-width: 2px;
+    }
+
+    .area {
+        fill: lightsteelblue;
+    }
+
+    .line {
+        fill: none;
+        stroke-width: 1.5px;
+    }
+
+    .dot {
+        fill: white;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+
+    .label {
+        font-size: 35px
+    }
+
+    .bar-text {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .x-label {
+        font-size: 16px;
+    }
+
+    .sign text {
+        font-size: 30px;
+    }
+
+    .axis-mini .axis path, .axis-mini .axis line {
+        stroke-width: 2px;
+    }
+
+    .axis-mini .axis text {
+        font-size: 25px;
+    }
+
+    .label-mini {
+        font-size: 25px;
+    }
+
+    .label-final {
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+<script type="text/javascript" src="./d3/optical.js"></script>
+</body>
+</html>

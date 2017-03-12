@@ -1,0 +1,22 @@
+{
+    "name": "DataProcessor",
+    "version": "0.0.1",
+    "private": true,
+    "main": "./main.js",
+    "scripts": {
+        "clean": "rm -r release && rm -r json && mkdir release && mkdir json",
+        "start": "npm run clean && node app.js && node main.js && http-server",
+        "test": "node test.js",
+        "hack": "rm -r hack && mkdir hack && node hack.js && npm run sync",
+        "sync": "node sync.js",
+        "optical": "node optical && http-server",
+        "point": "rm -r hack && mkdir hack && node pointBlast.js && npm run sync"
+    },
+    "devDependencies": {
+        "json-loader": "^0.5.4",
+        "webpack": "^2.1.0-beta.27"
+    },
+    "dependencies": {
+        "moment": "^2.17.1"
+    }
+}
